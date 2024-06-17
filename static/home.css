@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  color: black;
+  height:100px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height:1px;
+}
+
+.institute-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left:20px;
+  position:left;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right:20px;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+  height:200px;
+  width:200px;
+  margin-left:100px;
+  margin-right:0px;
+  
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li:hover {
+  background-color: #ddd;
+}
+
+.description {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.description-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 80%;
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  
+}
+
+.info-card:hover {
+  background-color: #ddd;
+  transform: translateY(-5px);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
