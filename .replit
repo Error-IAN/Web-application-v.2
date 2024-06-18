@@ -1,7 +1,13 @@
-modules = ["python-3.10"]
+modules = ["web", "python-3.10", "nodejs-20"]
 language = "python3"
-run = "python app.py"
+run = "python templates/index.html"
 
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "python templates/index.html"]
+
+[nix]
+channel = "stable-23_11"
