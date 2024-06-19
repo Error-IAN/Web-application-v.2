@@ -5,6 +5,11 @@ run = "python templates/index.html"
 [[ports]]
 localPort = 5000
 externalPort = 80
+exposeLocalhost = true
+
+[[ports]]
+localPort = 8501
+externalPort = 3000
 
 [deployment]
 run = ["sh", "-c", "python templates/index.html"]
